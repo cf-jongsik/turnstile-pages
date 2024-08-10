@@ -1,0 +1,16 @@
+#:schema node_modules/wrangler/config-schema.json
+name = "turnstile-pages"
+compatibility_date = "2024-08-06"
+compatibility_flags = ["nodejs_compat"]
+pages_build_output_dir = ".vercel/output/static"
+
+# add following Secret vars
+# [vars]
+# TURNSTILE_SITE_KEY = "YOUR TURNSTILE SITE KEY"
+# TURNSTILE_SECRET_KEY = "YOUR TURNSTILE SECRET KEY"
+
+# Variable bindings. These are arbitrary, plaintext strings (similar to environment variables)
+# Docs:
+# - https://developers.cloudflare.com/pages/functions/bindings/#environment-variables
+# Note: Use secrets to store sensitive data.
+# - https://developers.cloudflare.com/pages/functions/bindings/#secrets
