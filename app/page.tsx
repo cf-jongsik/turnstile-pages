@@ -2,7 +2,6 @@
 
 import React, { ChangeEvent, FormEvent, useState } from "react";
 import axios from "axios";
-import { getRequestContext } from "@cloudflare/next-on-pages";
 
 import { Turnstile } from "@marsidev/react-turnstile";
 
@@ -87,7 +86,7 @@ export default function Home() {
             />
           </div>
           <Turnstile
-            siteKey={getRequestContext().env.TURNSTILE_SITE_KEY}
+            siteKey="0x4AAAAAAAgTMaugj_M5fKHc"
             onSuccess={(token: string) => {
               console.log("TOKEN: ", token);
               setFormData((prevData) => ({
